@@ -41,7 +41,8 @@ task build
 
 
 
-build.dependsOn uploadNew
+//build.dependsOn uploadNew
+build.dependsOn zip
 zip.dependsOn npm_build
 //build.dependsOn npm_build
 npm_build.dependsOn npm_install
